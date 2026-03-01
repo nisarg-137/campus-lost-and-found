@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="LostFound.css">
+        <title> Campus Lost and Found </title>
+    </head>
+    <body>
+        <nav>
+            <h1> Campus Lost & Found</h1>
+            <a href="#"> Home </a>
+            <a href="#"> Lost items </a>
+            <a href="#"> Found items </a>
+            <a href="#"> Report Item </a>
+        </nav>
+        <section id="Home">
+            <h1> College Lost  And Found </h1>
+            <p> Helping students recover lost items on Campus.</p>
+            </section>
+        <section id="Lost">
+            <h2> Lost items </h2>
+            <div class="cards-container">
+            </div>
+            </section>
+        <section id="Found">
+            <h2> Found items </h2>
+            <div class="cards-container">                
+            </div>
+        </section>
+        <section id="Report">
+            <h2> Report Items</h2>
+            <form class="report-form" onsubmit="SubmitReport(event)">
+                <label> Item name </label>
+                <input id="itemName" type="text" placeholder="e.g. id card">
+
+                <label> Description </label>
+                <input id="description"type="text" placeholder="Color, details or uniqueness">
+                
+                <label> Location </label>
+                <input id="location" type="text" placeholder="e.g. Library,Auditorium">
+
+                <label> Contact </label>
+                <input id="contact" type="tel" placeholder="Phone num.">
+                <lebel> Status </label>
+                <select id="status">
+                    <option value="lost"> Lost </option>
+                    <option value="found"> Found </option>
+                </select>
+                <label> Upload item image (optional for Lost / Recommended For Found items) </label>
+                <input  id="itemImage" type="file" accept="image/*">
+                <button type="submit"> Submit</button>
+             </form>
+             <p id="output"></p>
+        <footer>
+            <p> "Lost And Found <sup>ⓒ</sup> 2026"</p>
+            </footer>
+            <script src="script.js"> </script>
+    </body>
+</html>
+
